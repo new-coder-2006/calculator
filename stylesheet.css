@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400;700&display=swap');
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 5px;
+}
+
+.calculator {
+    background-color: blue;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    padding: 10px;
+    gap: 5px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+    border: 1px solid #ccc;
+}
+
+.clear {
+    grid-column: 5 / 6;
+}
+
+.clear, .equals {
+    grid-row: 4 / 6;
+}
+
+.display {
+    background-color: olive;
+    grid-column: 1 / 6;
+    border-radius: 2px;
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 30px;
+}
+
+.equals {
+    grid-column: 4 / 5;
+}
+
+.number {
+    background-color: red;
+    color: white;
+}
+
+.operator {
+    background-color: white;
+    color: red;
+}

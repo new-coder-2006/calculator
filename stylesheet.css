@@ -17,7 +17,7 @@ button {
     background-color: blue;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(5, 1fr);
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
     gap: 5px;
     border-radius: 5px;
     box-shadow: 20px 20px 60px #d9d9d9,
@@ -31,6 +31,11 @@ button {
 
 .clear, .equals {
     grid-row: 4 / 6;
+}
+
+.clear, .equals, .operator {
+    background-color: white;
+    color: red;
 }
 
 .display {
@@ -52,9 +57,4 @@ button {
 .number {
     background-color: red;
     color: white;
-}
-
-.operator {
-    background-color: white;
-    color: red;
 }
